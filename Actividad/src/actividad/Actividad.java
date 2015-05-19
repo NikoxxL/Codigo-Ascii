@@ -25,7 +25,6 @@ public class Actividad {
      */
     public static void main(String[] args) {
         //Iniciación y asignacion de variables.
-        int numero;
         int decision = 0;
         String usuario;
 
