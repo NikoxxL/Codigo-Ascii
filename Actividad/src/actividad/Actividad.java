@@ -8,8 +8,8 @@ package actividad;
 import java.util.Scanner;
 
 /**
- * Enunciado: Aplicacion que en base a un numero (Codigo Ascii), muestra su equivalente en Hexadecimal y en Simbolo.
- *            El usuario ingresa el valor y la aplicacion muestra los valores correspondientes, dando la opcion de volver
+ * Enunciado: Aplicación que en base a un número (Codigo Ascii), muestra su equivalente en Hexadecimal y en Simbolo.
+ *            El usuario ingresa el valor y la aplicacion muestra los valores correspondientes, dando la opción de volver
  *            a consultar otro valor sin reiniciar la aplicacion. 
  * 
  * Autores:
@@ -24,19 +24,19 @@ public class Actividad {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //Iniciacion y asignacion de variables.
+        //Iniciación y asignacion de variables.
         int numero;
         int decision = 0;
         String usuario;
 
-        // Enunciado e instrucciones para el usuario
+        // Enunciado e instrucciones para el usuario.
         System.out.println("Este programa esta diseñado para que usted, en base a un Codigo Ascii, tenga un resultado en codigo Hexadecimal y en Simbolo");
         System.out.println("Instrucciones:\tIngrese un numero entre 0 y 127 (Incluyendo el 0 y el 127)\n\t\tcorrespondiente al rango de Codigo Ascii para obtener el resultado \n\t\ten Hexadecimal y en Simbolo.");
         //Creacion de objeto leer (Scanner)
-        do { //Inicio del ciclo general del programa
-            System.out.println("Ingrese el numero:");//Se le pide al usuario ingresar un numero
-            Scanner leer = new Scanner(System.in);//Se crea el objeto leer 
-            usuario = leer.nextLine();//Se lee y guarda el valor
+        do { //Inicio del ciclo general del programa.
+            System.out.println("Ingrese el numero:");//Se le pide al usuario ingresar un número.
+            Scanner leer = new Scanner(System.in);//Se crea el objeto leer. 
+            usuario = leer.nextLine();//Se lee y se guarda el valor.
             switch (usuario) {
                 case "0":
                     System.out.println("Para el Codigo Ascii (" + usuario + "). Su valor Hexadecimal es (0) y su valor en Simbolo es (NUL).");//Se le muestra al usuario los datos solicitados
@@ -678,12 +678,12 @@ public class Actividad {
                     System.out.println("¿Desea buscar otro valor? (SI = 1 ; NO = 0)");
                     decision = leer.nextInt();
                     break;
-                default://Muestra de mensaje de error y, como en los demas casos, se le pregunta al usuario si desea buscar otro valor.
+                default://Muestra un mensaje de error y como en los demas casos, se le pregunta al usuario si desea buscar otro valor.
                     System.out.println("Error: \tHa ingresado un valor no valido.\n\tRecuerde que debe ingresar un valor entre 0 y 127 (Incluyendo el 0 y el 127)");
                     System.out.println("¿Desea buscar otro valor? (SI = 1 ; NO = 0)");
                     decision = leer.nextInt();
             }// Llave switch
-        } while (decision == 1);//Evalula la respuesta del usuario en relacion a repetir la busqueda. Si es "1" la respuesta, se activa el ciclo. otro valor, dentendra el ciclo
-        System.out.println("¡Gracias por usar nuestra aplicacion!\n\t\t¡Nos Vemos!");//Mensaje de despedida
-    }//Llave publick static
+        } while (decision == 1);//Evalua la respuesta del usuario en relación a repetir la busqueda. Si es "1" la respuesta, se activa el ciclo. otro valor, dentendra el ciclo.
+        System.out.println("¡Gracias por usar nuestra aplicacion!\n\t\t¡Nos Vemos!");//Mensaje de despedida.
+    }//Llave public static
 }//Llave public class
